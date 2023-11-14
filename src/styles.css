@@ -2,6 +2,58 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+/* Media query for screens smaller than 600px */
+@media (max-width: 600px) {
+  .weather-app {
+    max-width: none;
+    padding: 15px;
+  }
+
+  .search-form-input {
+    width: 100%;
+  }
+
+  .search-form-button {
+    margin-top: 10px;
+  }
+
+  .weather-app-data {
+    flex-direction: column;
+  }
+
+  .weather-app-temperature-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .weather-app-temperature {
+    font-size: 48px;
+  }
+
+  .weather-app-unit {
+    margin-top: 6px;
+    font-size: 18px;
+  }
+
+  .weather-forecast {
+    flex-direction: row; /* Display forecast horizontally on smaller screens */
+    overflow-x: auto; /* Add horizontal scroll for smaller screens if needed */
+  }
+
+  .weather-forecast-day {
+    text-align: center;
+    margin-right: 10px; /* Add spacing between forecast days */
+  }
+
+  .weather-forecast-temperatures {
+    flex-direction: row; /* Display forecast temperatures horizontally */
+  }
+
+  .weather-forecast-temperature {
+    padding: 5px 10px; /* Adjust padding for forecast temperatures on smaller screens */
+  }
+}
+
 a {
   color: #c4a9ae;
   text-decoration: none;
